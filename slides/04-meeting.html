@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P04 · 场景二：会议自动纪要</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.head{position:absolute;left:0;top:52px}
+.head .h1{font-size:76px;margin-top:30px}
+.pain{position:absolute;right:0;top:64px;width:470px;border-left:2px solid #26332B;padding-left:32px}
+.pain p{font-size:22px;line-height:1.75;color:#97A39A}
+.pain b{color:#C7D2C8;font-weight:600}
+.pain .pl{font-family:'Noto Sans Mono',monospace;font-size:19px;letter-spacing:4px;color:#66736A;margin-bottom:12px}
+.chain{position:absolute;left:0;top:352px;display:flex;align-items:stretch}
+.node{width:512px;border:2px solid #1E2822;border-radius:20px;background:#0E1511;padding:36px 40px 32px}
+.node.hot{border-color:#2C5C41;background:linear-gradient(180deg,#10231A,#0E1511)}
+.node .no{font-family:'Noto Sans Mono',monospace;font-size:18px;letter-spacing:4px;color:#66736A}
+.node.hot .no{color:#3DF08A}
+.node .nt{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:36px;color:#EDF2EC;margin-top:14px}
+.node .nd{font-size:21px;line-height:1.6;color:#97A39A;margin-top:12px}
+.node .nd b{color:#C7D2C8;font-weight:600}
+.node.hot .nd b{color:#3DF08A}
+.jt{width:78px;display:flex;align-items:center;justify-content:center}
+.jt span{font-family:'Noto Sans Mono',monospace;font-size:36px;color:#3DF08A}
+.outputs{position:absolute;left:0;top:730px;right:0}
+.outputs .ol{font-family:'Noto Sans Mono',monospace;font-size:20px;letter-spacing:5px;color:#66736A;margin-bottom:22px}
+.o-row{display:flex;gap:24px}
+.o-card{flex:1;border:2px solid #26332B;border-radius:16px;padding:24px 28px;background:#0E1511}
+.o-card .ot{font-family:'Noto Serif CJK SC',serif;font-weight:700;font-size:28px;color:#EDF2EC}
+.o-card .od{font-size:20px;line-height:1.55;color:#97A39A;margin-top:8px}
+.value{position:absolute;left:0;bottom:64px;right:0;border-top:2px solid #1E2822;padding-top:30px;
+  display:flex;align-items:center;gap:36px}
+.value .vl{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:40px;color:#EDF2EC;white-space:nowrap}
+.value .vl em{font-style:normal;color:#3DF08A}
+.value .vr{font-size:23px;line-height:1.6;color:#97A39A}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 典型场景 02</span>
+  <span class="m-tag">04 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="main">
+  <div class="head">
+    <div class="kicker"><span class="bar"></span><span class="k">SCENARIO · MEETINGS</span></div>
+    <h1 class="h1">开完会，纪要<em>已经写好了</em></h1>
+  </div>
+  <div class="pain">
+    <div class="pl">THE OLD WAY</div>
+    <p>天天开会，<b>笔记跟不上讨论</b>；会后一周，谁说了什么、定了什么——全忘了。</p>
+  </div>
+
+  <div class="chain">
+    <div class="node">
+      <div class="no">01 · 捕获</div>
+      <div class="nt">自动录音</div>
+      <p class="nd">同时捕获<b>系统音频 + 麦克风</b>，线上会议、线下面谈一视同仁，零操作</p>
+    </div>
+    <div class="jt"><span>→</span></div>
+    <div class="node">
+      <div class="no">02 · 转写</div>
+      <div class="nt">本地 Whisper</div>
+      <p class="nd">语音在<b>本机完成转写</b>，不上传云端；说话人分离，逐句落时间戳</p>
+    </div>
+    <div class="jt"><span>→</span></div>
+    <div class="node hot">
+      <div class="no">03 · 产出</div>
+      <div class="nt">结构化纪要</div>
+      <p class="nd">会议摘要、行动项、待跟进——<b>开完会自动生成</b>，可直接追问任何细节</p>
+    </div>
+  </div>
+
+  <div class="outputs">
+    <div class="ol">DELIVERABLES</div>
+    <div class="o-row">
+      <div class="o-card"><div class="ot">会议摘要</div><p class="od">讨论脉络一次成文</p></div>
+      <div class="o-card"><div class="ot">行动项</div><p class="od">谁、在何时、做什么</p></div>
+      <div class="o-card"><div class="ot">原话追溯</div><p class="od">任何结论都能回放到原句</p></div>
+    </div>
+  </div>
+
+  <div class="value">
+    <span class="vl">价值 · 会议内容 <em>100% 可追溯</em></span>
+    <p class="vr">不用再分心记笔记——你在会议里只负责思考，记录交给 ScreenPipe。</p>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">场景 02 · 会议自动纪要</div>
+  <div class="f-tag">04 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
