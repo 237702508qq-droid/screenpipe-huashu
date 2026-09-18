@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P06 · 用户常见问题（上）</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.head{position:absolute;left:0;top:52px}
+.head .h1{font-size:76px;margin-top:30px}
+.grid{position:absolute;left:0;top:346px;right:0;display:grid;
+  grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:28px;height:560px}
+.faq{border:2px solid #1E2822;border-radius:20px;background:#0E1511;padding:32px 38px 28px;position:relative}
+.faq .top{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
+.faq .qrow{display:flex;align-items:flex-start;gap:20px;min-width:0}
+.faq .qn{font-family:'Noto Sans Mono',monospace;font-size:20px;letter-spacing:3px;color:#3DF08A;
+  padding-top:10px}
+.faq .qt{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:34px;color:#EDF2EC;line-height:1.3}
+.faq .stat{text-align:right;flex-shrink:0;margin-top:2px}
+.faq .stat .sv{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:56px;color:#3DF08A;
+  letter-spacing:1px;line-height:1.05}
+.faq .stat .sv small{font-size:26px;font-weight:700}
+.faq .stat .sl{font-family:'Noto Sans Mono',monospace;font-size:15px;letter-spacing:2px;color:#66736A;
+  margin-top:6px;white-space:nowrap}
+.faq .ad{font-size:20.5px;line-height:1.65;color:#97A39A;margin-top:22px}
+.faq .ad b{color:#C7D2C8;font-weight:600}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 用户常见问题</span>
+  <span class="m-tag">06 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="main">
+  <div class="head">
+    <div class="kicker"><span class="bar"></span><span class="k">FAQ · PRIVACY &amp; PERFORMANCE</span></div>
+    <h1 class="h1">装它之前，先问四个<em>尖锐问题</em></h1>
+  </div>
+
+  <div class="grid">
+    <div class="faq">
+      <div class="top">
+        <div class="qrow"><span class="qn">Q1</span><span class="qt">隐私安全吗？</span></div>
+        <div class="stat"><div class="sv">100<small>%</small></div><div class="sl">LOCAL</div></div>
+      </div>
+      <p class="ad"><b>数据不离开设备</b>，存储与检索全部在本机完成；源代码公开可审计，隐私过滤器可一键排除敏感应用。</p>
+    </div>
+    <div class="faq">
+      <div class="top">
+        <div class="qrow"><span class="qn">Q2</span><span class="qt">电脑会变卡吗？</span></div>
+        <div class="stat"><div class="sv">&lt;20<small>% CPU</small></div><div class="sl">RAM &lt; 3GB</div></div>
+      </div>
+      <p class="ad"><b>事件驱动捕获</b>——只在屏幕变化时截关键帧，不录像。实测后台常驻 CPU 占用 &lt;20%、内存 &lt;3GB。</p>
+    </div>
+    <div class="faq">
+      <div class="top">
+        <div class="qrow"><span class="qn">Q3</span><span class="qt">磁盘占用多大？</span></div>
+        <div class="stat"><div class="sv">30<small>GB/月</small></div><div class="sl">RETENTION 可配置</div></div>
+      </div>
+      <p class="ad">约 <b>30GB/月</b>（含截图与转写），保留期自行配置；新版采用 SQLite + Parquet 列式存储，检索快、占用低。</p>
+    </div>
+    <div class="faq">
+      <div class="top">
+        <div class="qrow"><span class="qn">Q4</span><span class="qt">支持多显示器吗？</span></div>
+        <div class="stat"><div class="sv">N<small> 屏同捕</small></div><div class="sl">ALL DISPLAYS</div></div>
+      </div>
+      <p class="ad">支持。<b>所有显示器同时捕获</b>——副屏、竖屏、外接屏一个不漏（多数竞品只捕获活动窗口）。</p>
+    </div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">FAQ 01–04 · 隐私 / 性能 / 磁盘 / 多屏</div>
+  <div class="f-tag">06 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
