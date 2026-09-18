@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P02 · 一句话定位</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.head{position:absolute;left:0;top:52px;right:0}
+.head .h1{font-size:76px;margin-top:30px}
+.flow{position:absolute;left:0;top:356px;display:flex;align-items:stretch;gap:0}
+.stage{width:524px;border:2px solid #1E2822;border-radius:20px;background:#0E1511;padding:40px 42px 36px}
+.stage .no{font-family:'Noto Sans Mono',monospace;font-size:19px;letter-spacing:4px;color:#66736A}
+.stage .vt{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:44px;color:#EDF2EC;margin-top:16px}
+.stage .vd{font-size:22px;line-height:1.6;color:#97A39A;margin-top:14px}
+.stage.hot{border-color:#2C5C41;background:linear-gradient(180deg,#10231A,#0E1511)}
+.stage.hot .vt{color:#3DF08A}
+.arrow{width:96px;display:flex;align-items:center;justify-content:center}
+.arrow .a{font-family:'Noto Sans Mono',monospace;font-size:44px;color:#3DF08A}
+.trio{position:absolute;left:0;top:742px;right:0;display:flex;gap:24px}
+.tp{flex:1;border-top:2px solid #1E2822;padding-top:22px}
+.tp .tt{font-family:'Noto Sans Mono',monospace;font-size:20px;letter-spacing:2px;color:#3DF08A}
+.tp .td{font-size:21px;line-height:1.6;color:#97A39A;margin-top:10px}
+.quote{position:absolute;right:0;top:52px;width:520px;text-align:right}
+.quote .q{font-family:'Noto Serif CJK SC',serif;font-size:26px;line-height:1.75;color:#C7D2C8}
+.quote .q b{color:#3DF08A;font-weight:700}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 它是什么</span>
+  <span class="m-tag">02 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="main">
+  <div class="head">
+    <div class="kicker"><span class="bar"></span><span class="k">WHAT IT IS</span></div>
+    <h1 class="h1">所有 AI 的<em>记忆基础设施</em></h1>
+  </div>
+  <div class="quote">
+    <p class="q">不是又一个 AI 助手，<br>而是所有 AI 调用的<br><b>本地记忆层</b>——<br>REST API + MCP 服务器</p>
+  </div>
+
+  <div class="flow">
+    <div class="stage">
+      <div class="no">STEP 01</div>
+      <div class="vt">Record · 记录</div>
+      <p class="vd">持续捕获屏幕帧与系统音频：OCR 提取文字、Whisper 本地转写、无障碍树输出结构化数据</p>
+    </div>
+    <div class="arrow"><span class="a">→</span></div>
+    <div class="stage">
+      <div class="no">STEP 02</div>
+      <div class="vt">Rewind · 回溯</div>
+      <p class="vd">全部数据本地存储、可全文检索；上个月看过的那一屏，两秒钟找回来</p>
+    </div>
+    <div class="arrow"><span class="a">→</span></div>
+    <div class="stage hot">
+      <div class="no">STEP 03</div>
+      <div class="vt">Ask · 提问</div>
+      <p class="vd">任何 AI 通过本地 API 或 MCP 读取你的历史上下文，回答「你做过什么」级别的问题</p>
+    </div>
+  </div>
+
+  <div class="trio">
+    <div class="tp"><div class="tt">屏幕帧 + OCR</div><p class="td">帧级截图识别，页面文字全部可搜</p></div>
+    <div class="tp"><div class="tt">音频转写</div><p class="td">麦克风 + 系统音频，说话人分离</p></div>
+    <div class="tp"><div class="tt">无障碍树</div><p class="td">结构化 UI 数据，AI 直接读懂界面</p></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">Record · Rewind · Ask —— 三个动词，别无其他</div>
+  <div class="f-tag">02 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
