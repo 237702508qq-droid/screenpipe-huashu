@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P03 · 场景一：找回丢失的信息</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.head{position:absolute;left:0;top:52px}
+.head .h1{font-size:76px;margin-top:30px}
+.compare{position:absolute;left:0;top:346px;right:0;display:flex;gap:36px;align-items:stretch}
+.col{flex:1;border:2px solid #1E2822;border-radius:20px;padding:38px 44px;background:#0E1511}
+.col.good{border-color:#2C5C41;background:linear-gradient(180deg,#10231A,#0E1511)}
+.col .lab{font-family:'Noto Sans Mono',monospace;font-size:20px;letter-spacing:5px;color:#66736A}
+.col.good .lab{color:#3DF08A}
+.col .way{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:38px;color:#EDF2EC;margin-top:18px}
+.col .desc{font-size:22px;line-height:1.7;color:#97A39A;margin-top:16px}
+.col .desc b{color:#C7D2C8;font-weight:600}
+.chips{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px}
+.chip{font-family:'Noto Sans Mono',monospace;font-size:19px;color:#8B978D;border:2px solid #26332B;
+  border-radius:999px;padding:10px 22px}
+.gstat{margin-top:30px;display:flex;align-items:baseline;gap:18px}
+.gstat .n{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:92px;color:#3DF08A;letter-spacing:2px}
+.gstat .u{font-size:24px;color:#97A39A;line-height:1.4}
+.vs{width:64px;display:flex;align-items:center;justify-content:center}
+.vs span{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:30px;color:#66736A;
+  border:2px solid #26332B;border-radius:999px;padding:18px 10px}
+.value{position:absolute;left:0;bottom:64px;right:0;border-top:2px solid #1E2822;padding-top:30px;
+  display:flex;align-items:center;gap:36px}
+.value .vl{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:40px;color:#EDF2EC;white-space:nowrap}
+.value .vr{font-size:23px;line-height:1.6;color:#97A39A}
+.value .vr b{color:#3DF08A;font-weight:600}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 典型场景 01</span>
+  <span class="m-tag">03 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="main">
+  <div class="head">
+    <div class="kicker"><span class="bar"></span><span class="k">SCENARIO · RETRIEVAL</span></div>
+    <h1 class="h1">把「我记得看过」变成<em>「我能找到」</em></h1>
+  </div>
+
+  <div class="compare">
+    <div class="col">
+      <div class="lab">WITHOUT SCREENPIPE</div>
+      <div class="way">翻找十分钟，常常一场空</div>
+      <p class="desc">上周看过一个网页、聊过一段话，现在想找却忘了在哪。<b>浏览器历史、聊天记录、邮箱</b>挨个翻一遍——耗时，且大多数时候找不到。</p>
+      <div class="chips">
+        <div class="chip">浏览器历史</div>
+        <div class="chip">聊天记录</div>
+        <div class="chip">邮箱全文搜</div>
+        <div class="chip">文件夹翻找</div>
+      </div>
+      <div class="gstat"><span class="n">10<small style="font-size:40px">min+</small></span><span class="u">平均找回成本<br>还经常失败</span></div>
+    </div>
+    <div class="vs"><span>VS</span></div>
+    <div class="col good">
+      <div class="lab">WITH SCREENPIPE</div>
+      <div class="way">一句话，秒级命中</div>
+      <p class="desc">自然语言提问：<b>「上周关于项目 deadline 的讨论」</b>——直接返回当时的截图和上下文，来源、时间、前后文一目了然。</p>
+      <div class="chips">
+        <div class="chip acc" style="color:#3DF08A;border-color:#2C5C41">自然语言检索</div>
+        <div class="chip acc" style="color:#3DF08A;border-color:#2C5C41">截图 + 上下文</div>
+      </div>
+      <div class="gstat"><span class="n">1<small style="font-size:40px">sec</small></span><span class="u">一次提问<br>精确命中原始画面</span></div>
+    </div>
+  </div>
+
+  <div class="value">
+    <span class="vl">价值 · 检索成本从「10 分钟」降到「一句话」</span>
+    <p class="vr">你的每一段屏幕历史都成为<b>可检索的资产</b>——信息不再是「看过就丢」，而是「随时唤起」。</p>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">场景 01 · 找回丢失的信息</div>
+  <div class="f-tag">03 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
