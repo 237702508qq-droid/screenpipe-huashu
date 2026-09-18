@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P10 · 开始使用</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.cta-bg{position:absolute;top:0;left:0;width:1920px;height:1080px}
+.cta-bg img{width:1920px;height:1080px}
+.cta-shade{position:absolute;top:0;left:0;width:1920px;height:1080px;
+  background:linear-gradient(180deg,rgba(10,15,12,.92) 0%,rgba(10,15,12,.55) 55%,rgba(10,15,12,.75) 100%)}
+.head{position:absolute;left:0;top:100px;right:0;text-align:center}
+.head .kicker{justify-content:center}
+.head .h1{font-size:104px;margin-top:36px}
+.head .sub{font-size:28px;margin-top:26px}
+.tiers{position:absolute;left:160px;right:160px;top:472px;display:flex;gap:26px}
+.tier{flex:1;border:2px solid #26332B;border-radius:20px;background:rgba(14,21,17,.88);
+  padding:30px 34px 26px;text-align:center}
+.tier.hot{border-color:#2C5C41;background:linear-gradient(180deg,rgba(16,35,26,.95),rgba(14,21,17,.9))}
+.tier .tn{font-family:'Noto Sans Mono',monospace;font-size:19px;letter-spacing:3px;color:#8B978D}
+.tier.hot .tn{color:#3DF08A}
+.tier .tp{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:52px;color:#EDF2EC;
+  margin-top:14px}
+.tier .tp small{font-size:24px;font-weight:700;color:#97A39A}
+.tier .td{font-size:19px;line-height:1.55;color:#97A39A;margin-top:12px}
+.devline{position:absolute;left:160px;right:160px;top:812px;text-align:center;
+  font-family:'Noto Sans Mono',monospace;font-size:20px;letter-spacing:1px;color:#8B978D}
+.devline b{color:#3DF08A;font-weight:400}
+.url{position:absolute;left:0;right:0;top:880px;display:flex;justify-content:center}
+.url .pill{font-family:'Noto Sans Mono',monospace;font-size:34px;letter-spacing:3px;color:#0A0F0C;
+  background:#3DF08A;border-radius:999px;padding:22px 76px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="cta-bg"><img src="../assets/grad-cta.png" alt=""></div>
+
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 开始使用</span>
+  <span class="m-tag">10 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="head">
+  <div class="kicker"><span class="bar"></span><span class="k">GET STARTED</span></div>
+  <h1 class="h1">让你的 AI，<em>从今天开始「记得你」</em></h1>
+  <p class="sub serif">下载即用 · 免费方案包含屏幕 + 音频捕获、近期搜索、分享上下文给 AI</p>
+</div>
+
+<div class="tiers">
+  <div class="tier">
+    <div class="tn">FREE</div>
+    <div class="tp">Free</div>
+    <p class="td">个人入门 · 屏幕音频捕获<br>近期搜索 · AI 上下文分享</p>
+  </div>
+  <div class="tier hot">
+    <div class="tn">BASIC</div>
+    <div class="tp">$21<small>/mo</small></div>
+    <p class="td">完整历史 · 无限回溯<br>适合重度个人用户</p>
+  </div>
+  <div class="tier">
+    <div class="tn">BUSINESS</div>
+    <div class="tp">$42<small>/seat</small></div>
+    <p class="td">团队协作 · 统一管理<br>共享上下文空间</p>
+  </div>
+  <div class="tier">
+    <div class="tn">ENTERPRISE</div>
+    <div class="tp">定制</div>
+    <p class="td">SSO · MDM · 保留策略<br>专属支持</p>
+  </div>
+</div>
+
+<p class="devline">开发者 · 本地 REST API <b>localhost:3030</b> · JS/TS SDK · MCP 服务器</p>
+
+<div class="url"><div class="pill">screenpipe.com — Download for free</div></div>
+
+<footer class="foot">
+  <div class="f-tag">screenpipe.com · 本地优先 · 开源可审计</div>
+  <div class="f-tag">10 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
