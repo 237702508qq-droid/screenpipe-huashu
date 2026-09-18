@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P08 · Pipes 插件系统</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.head{position:absolute;left:0;top:52px;width:1400px}
+.head .h1{font-size:74px;margin-top:30px}
+.def{position:absolute;left:0;top:336px;width:920px}
+.def p{font-size:24px;line-height:1.75;color:#C7D2C8}
+.def p b{color:#3DF08A;font-weight:600}
+.def .dd{font-size:21px;line-height:1.7;color:#97A39A;margin-top:22px}
+.tree{position:absolute;left:0;top:560px;width:920px;border:2px solid #26332B;border-radius:20px;
+  background:#070B09;padding:34px 40px 30px;font-family:'Noto Sans Mono',monospace}
+.tree .path{font-size:21px;color:#8B978D}
+.tree .path b{color:#3DF08A;font-weight:400}
+.tree .f{font-size:22px;color:#EDF2EC;margin-top:20px}
+.tree .c{font-size:19px;color:#66736A;margin-top:10px;line-height:1.65}
+.tree .c b{color:#8B978D;font-weight:400}
+.examples{position:absolute;right:0;top:336px;width:720px}
+.ex-title{font-family:'Noto Sans Mono',monospace;font-size:19px;letter-spacing:4px;color:#66736A;
+  margin-bottom:20px}
+.ex{border:2px solid #1E2822;border-radius:18px;background:#0E1511;padding:26px 32px;margin-bottom:20px}
+.ex .en{font-family:'Noto Sans Mono',monospace;font-size:23px;color:#3DF08A;letter-spacing:1px}
+.ex .ed{font-size:20px;line-height:1.6;color:#97A39A;margin-top:8px}
+.value{position:absolute;left:0;bottom:64px;right:0;border-top:2px solid #1E2822;padding-top:30px;
+  display:flex;align-items:baseline;gap:36px}
+.value .vl{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:38px;color:#EDF2EC;white-space:nowrap}
+.value .vl em{font-style:normal;color:#3DF08A}
+.value .vr{font-size:22px;line-height:1.6;color:#97A39A}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 应对方案</span>
+  <span class="m-tag">08 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="main">
+  <div class="head">
+    <div class="kicker"><span class="bar"></span><span class="k">PIPES · AUTOMATION LAYER</span></div>
+    <h1 class="h1">写个 Markdown，就是一个<em>定时 AI 代理</em></h1>
+  </div>
+
+  <div class="def">
+    <p>Pipe = <b>一个 Markdown 文件定义的定时 AI 代理</b>。把 prompt 写下来、定好节奏，剩下的交给它。</p>
+    <p class="dd">不需要 SDK，不需要部署——在 <b>~/.screenpipe/pipes/</b> 放一个 .md 文件，代理即刻生效。读取你的屏幕历史、按计划运行、把结果送到该去的地方。</p>
+  </div>
+
+  <div class="tree">
+    <p class="path"><b>$</b> ~/.screenpipe/pipes/</p>
+    <p class="f">└── time-breakdown.md</p>
+    <p class="c">├ <b>触发</b>：每天 22:00<br>└ <b>做什么</b>：分析今天的屏幕历史，<br>　 生成时间去向报告</p>
+  </div>
+
+  <div class="examples">
+    <div class="ex-title">BUILT-IN PIPES</div>
+    <div class="ex">
+      <div class="en">time-breakdown</div>
+      <p class="ed">时间去向分析——每个应用、每个项目各耗了多少小时</p>
+    </div>
+    <div class="ex">
+      <div class="en">ai-prompt-journal</div>
+      <p class="ed">AI 提示词日志——自动记录你与 AI 的每次交互，复盘 prompting 轨迹</p>
+    </div>
+    <div class="ex">
+      <div class="en">video-export</div>
+      <p class="ed">屏幕活动视频——把一天的操作剪成可回放的时间轴</p>
+    </div>
+  </div>
+
+  <div class="value">
+    <span class="vl">价值 · 从「被动记忆」升级为<em>「主动自动化」</em></span>
+    <p class="vr">不只是录像机，是工作流引擎——记忆只是开始。</p>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">Pipes · 插件系统</div>
+  <div class="f-tag">08 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
