@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P01 · 封面</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.hero-bg{position:absolute;top:0;left:0;width:1920px;height:1080px}
+.hero-bg img{width:1920px;height:1080px}
+.hero-shade{position:absolute;top:0;left:0;width:1920px;height:1080px;
+  background:linear-gradient(90deg,rgba(10,15,12,.93) 0%,rgba(10,15,12,.78) 48%,rgba(10,15,12,.28) 100%)}
+.brand{display:flex;align-items:center;gap:26px}
+.logo{width:66px;height:66px;border:3px solid #3DF08A;border-radius:16px;position:relative}
+.logo i{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;
+  background:#3DF08A;border-radius:4px}
+.brand-name{font-family:'Noto Sans Mono',monospace;font-size:26px;letter-spacing:7px;color:#EDF2EC}
+.hero-main{position:absolute;left:120px;top:298px;width:1280px}
+.kicker .k{font-size:22px}
+.hero-title{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:230px;line-height:1.02;
+  letter-spacing:4px;color:#EDF2EC;margin-top:36px}
+.hero-sub{font-family:'Noto Serif CJK SC',serif;font-weight:700;font-size:52px;line-height:1.4;
+  color:#C7D2C8;margin-top:56px}
+.hero-sub em{font-style:normal;color:#3DF08A}
+.hero-tags{position:absolute;left:120px;top:856px;display:flex;gap:24px}
+.tag{font-family:'Noto Sans Mono',monospace;font-size:21px;letter-spacing:2px;color:#8B978D;
+  border:2px solid #26332B;border-radius:999px;padding:14px 34px;background:rgba(14,21,17,.72)}
+.tag b{color:#3DF08A;font-weight:400}
+</style>
+</head>
+<body>
+<div class="hero-bg"><img src="../assets/grad-cover.png" alt=""></div>
+
+<header class="masthead">
+  <div class="brand">
+    <div class="logo"><i></i></div>
+    <div class="brand-name">SCREENPIPE</div>
+  </div>
+  <div class="m-tag">PRODUCT VALUE DECK <b>/</b> 2026</div>
+</header>
+<div class="m-rule"></div>
+
+<div class="hero-main">
+  <div class="kicker"><span class="bar"></span><span class="k">CONTEXT INFRASTRUCTURE FOR AI</span></div>
+  <h1 class="hero-title">ScreenPipe</h1>
+  <p class="hero-sub">让 AI 记住你在电脑上做过的<em>一切</em></p>
+</div>
+
+<div class="hero-tags">
+  <div class="tag">AI 代理的「情景记忆」基础设施</div>
+  <div class="tag"><b>YC S26</b></div>
+  <div class="tag">GitHub <b>21,600+</b> Star</div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">本地优先 · macOS / Windows / Linux · 开源可审计</div>
+  <div class="f-tag">screenpipe.com</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
