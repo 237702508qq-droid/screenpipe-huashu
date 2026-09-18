@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>P07 · 与 Rewind / Recall 对比</title>
+<link rel="stylesheet" href="../shared/tokens.css">
+<style>
+.head{position:absolute;left:0;top:52px}
+.head .h1{font-size:72px;margin-top:30px}
+.tbl{position:absolute;left:0;top:316px;right:0}
+.trow{display:flex;align-items:stretch;border-top:2px solid #1E2822}
+.trow:last-child{border-bottom:2px solid #1E2822}
+.thead{border-top:none}
+.cell{padding:15px 26px;font-size:20px;line-height:1.4;color:#97A39A;
+  display:flex;flex-direction:column;justify-content:center}
+.c-dim{width:360px;font-family:'Noto Serif CJK SC',serif;font-weight:700;font-size:24px;color:#EDF2EC}
+.c-us{width:470px;background:linear-gradient(180deg,#10231A,#0D1A13);color:#EDF2EC}
+.thead .c-us{background:linear-gradient(180deg,#12291D,#0F2017)}
+.c-th{width:340px}
+.c-th:last-child{width:330px}
+.thead .cell{font-family:'Noto Sans Mono',monospace;font-size:19px;letter-spacing:1px;color:#8B978D;
+  justify-content:center;padding:20px 26px}
+.thead .c-us{color:#3DF08A;font-size:21px}
+.c-us .ok{color:#3DF08A}
+.ok{font-weight:600}
+.no{color:#66736A}
+.foot-note{position:absolute;left:0;bottom:64px;right:0;border-top:2px solid #1E2822;padding-top:30px;
+  display:flex;align-items:baseline;gap:36px}
+.foot-note .vl{font-family:'Noto Serif CJK SC',serif;font-weight:900;font-size:32px;color:#EDF2EC;white-space:nowrap}
+.foot-note .vl em{font-style:normal;color:#3DF08A}
+.foot-note .vr{font-size:22px;line-height:1.6;color:#97A39A}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <span class="m-tag">SCREENPIPE <b>/</b> 用户常见问题 · 竞品对比</span>
+  <span class="m-tag">07 <b>/</b> 10</span>
+</header>
+<div class="m-rule"></div>
+
+<div class="main">
+  <div class="head">
+    <div class="kicker"><span class="bar"></span><span class="k">Q5 · VS REWIND / RECALL</span></div>
+    <h1 class="h1">和 Rewind、Microsoft Recall 比，<em>差在哪？</em></h1>
+  </div>
+
+  <div class="tbl">
+    <div class="trow thead">
+      <div class="cell c-dim"></div>
+      <div class="cell c-us">SCREENPIPE</div>
+      <div class="cell c-th">REWIND / LIMITLESS</div>
+      <div class="cell c-th">MS RECALL</div>
+      <div class="cell c-th">GRANOLA</div>
+    </div>
+    <div class="trow">
+      <div class="cell c-dim">源码可审计</div>
+      <div class="cell c-us"><span class="ok">✓ 开源，全程可审计</span></div>
+      <div class="cell c-th"><span class="no">✕ 闭源</span></div>
+      <div class="cell c-th"><span class="no">✕ 闭源</span></div>
+      <div class="cell c-th"><span class="no">✕ 闭源</span></div>
+    </div>
+    <div class="trow">
+      <div class="cell c-dim">跨平台</div>
+      <div class="cell c-us"><span class="ok">✓ macOS / Windows / Linux</span></div>
+      <div class="cell c-th"><span class="no">✕ 平台受限</span></div>
+      <div class="cell c-th"><span class="no">✕ 仅 Windows</span></div>
+      <div class="cell c-th"><span class="no">✕ 平台受限</span></div>
+    </div>
+    <div class="trow">
+      <div class="cell c-dim">本地转写</div>
+      <div class="cell c-us"><span class="ok">✓ 本地 Whisper，不出设备</span></div>
+      <div class="cell c-th"><span class="no">✕ 云端处理</span></div>
+      <div class="cell c-th"><span class="no">✕ 云端处理</span></div>
+      <div class="cell c-th"><span class="no">✕ 云端处理</span></div>
+    </div>
+    <div class="trow">
+      <div class="cell c-dim">插件系统</div>
+      <div class="cell c-us"><span class="ok">✓ Pipes 开放插件生态</span></div>
+      <div class="cell c-th"><span class="no">✕ 无开放插件</span></div>
+      <div class="cell c-th"><span class="no">✕ 无开放插件</span></div>
+      <div class="cell c-th"><span class="no">✕ 无开放插件</span></div>
+    </div>
+    <div class="trow">
+      <div class="cell c-dim">自选 AI 模型</div>
+      <div class="cell c-us"><span class="ok">✓ 任意模型，本地或云端</span></div>
+      <div class="cell c-th"><span class="no">✕ 绑定厂商模型</span></div>
+      <div class="cell c-th"><span class="no">✕ 绑定厂商模型</span></div>
+      <div class="cell c-th"><span class="no">✕ 绑定厂商模型</span></div>
+    </div>
+  </div>
+
+  <div class="foot-note">
+    <span class="vl">Rewind 等是「闭源订阅产品」，ScreenPipe 是<em>「可审计的开放基础设施」</em></span>
+    <p class="vr">选择权在你：数据留在谁手里、被谁的模型处理、能否随时退出——答案从第一行就写好了。</p>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="f-tag">FAQ 05 · 竞品对比</div>
+  <div class="f-tag">07 <b>/</b> 10</div>
+</footer>
+<div class="f-rule"></div>
+</body>
+</html>
